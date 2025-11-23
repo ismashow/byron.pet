@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adotaí - Adoção de Animais</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-brown': '#7B3F3F',  // Cor do Header/Footer
+                        'brand-pink': '#D9A6A6',   // Cor das seções de Destaque
+                        'brand-light': '#FFF9F5',  // Fundo claro
+                        'brand-card': '#FDF2F2',   // Fundo dos cards
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Roboto Slab', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-light text-gray-800 font-sans">
+
+    <header class="bg-brand-brown text-white py-4 relative z-50 shadow-lg">
+    <div class="container mx-auto px-6 flex justify-between items-center">
+        <div class="flex items-center gap-2 text-2xl font-serif font-bold">
+            <img src="icons/paw.png" alt="Logo Patinha" class="w-8 h-8 object-contain">
+            <span>Adotaí</span>
+        </div>
+
+        <nav class="hidden md:flex gap-8 font-medium text-sm tracking-wide">
+            <a href="#" class="hover:text-brand-pink transition">INÍCIO</a>
+            <a href="#" class="hover:text-brand-pink transition">CONTATO</a>
+            <a href="#" class="hover:text-brand-pink transition">ANIMAIS</a>
+        </nav>
+
+        <div class="flex items-center gap-4">
+            <div class="relative hidden sm:block">
+                <input type="text" class="bg-transparent border border-white/50 rounded-full px-3 py-1 text-sm text-white placeholder-white/70 focus:outline-none" placeholder="Buscar...">
+                <i class="fa-solid fa-magnifying-glass absolute right-3 top-2 text-xs"></i>
+            </div>
+            <img src="icons/user-interface.png" alt="Perfil" class="w-8 h-8 cursor-pointer opacity-90 hover:opacity-100">
+        </div>
+    </div>
+</header>
+
+    <section class="bg-brand-light relative z-40 shadow-md">
+    
+    <div class="container mx-auto px-6 py-16 grid md:grid-cols-2 gap-8 items-center relative overflow-hidden">
+        
+        <div class="z-10 relative">
+            
+            <h1 class="text-4xl md:text-5xl font-serif font-bold text-black tracking-wide mb-6">
+                ELE SÓ PRECISA DE VOCÊ.
+            </h1>
+            
+            <p class="text-lg mb-8 text-gray-700 max-w-md">
+                Pode não ser possível mudar o mundo, mas para aquele animal, você mudará o mundo inteiro dele!
+            </p>
+            
+            <div class="flex gap-4 mb-8">
+                <button class="bg-brand-pink hover:bg-brand-brown text-brand-brown hover:text-white font-bold py-2 px-6 rounded shadow-md transition border-2 border-brand-brown">
+                    QUERO ADOTAR
+                </button>
+                <button class="bg-brand-pink hover:bg-brand-brown text-brand-brown hover:text-white font-bold py-2 px-6 rounded shadow-md transition border-2 border-brand-brown">
+                    QUERO DOAR
+                </button>
+            </div>
+
+            <div class="flex items-center gap-4 text-sm font-bold">
+                <span>Nos contate!</span>
+    
+                <a href="#" class="transition hover:opacity-70">
+                    <img src="icons/Whatsapp.png" alt="WhatsApp" class="w-6 h-6 object-contain">
+                </a>
+
+                <a href="#" class="transition hover:opacity-70">
+                    <img src="icons/Instagram.png" alt="Instagram" class="w-6 h-6 object-contain">
+                </a>
+            </div>
+        </div>
+        
+        <div class="relative h-full min-h-[400px] flex items-end justify-center md:justify-end">
+            <img src="img/cachorro.png" alt="Cachorro Golden Retriever" class="absolute bottom-0 right-0 md:-right-10 max-h-[450px] object-contain z-0">
+            
+            <img src="img/gato.png" alt="Gato Laranja" class="absolute bottom-0 right-[180px] md:right-[220px] max-h-[250px] object-contain z-10">
+        </div>
+    </section>
+
+    <section class="bg-brand-pink text-white py-12 relative z-30 shadow-md">
+    <div class="container mx-auto px-6">
+        <h2 class="text-2xl font-serif mb-8 ml-4">Nosso impacto em números</h2>
+        <div class="grid grid-cols-3 gap-4 text-center">
+            <div class="flex flex-col items-center">
+                <img src="icons/home.png" alt="Doações" class="w-14 h-14 mb-2 object-contain">
+                <span class="font-bold block">+5089</span>
+                <span class="text-sm uppercase">Doações</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="icons/stethoscope.png" alt="Tratamentos" class="w-14 h-14 mb-2 object-contain">
+                <span class="font-bold block">+8946</span>
+                <span class="text-sm uppercase">Tratamentos</span>
+            </div>
+            <div class="flex flex-col items-center">
+                <img src="icons/vaccine.png" alt="Vacinações" class="w-14 h-14 mb-2 object-contain">
+                <span class="font-bold block">+11377</span>
+                <span class="text-sm uppercase">Vacinações</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="bg-brand-light relative z-20 shadow-md py-16">
+     <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-serif font-bold mb-10 text-gray-900">Pronto para adotar?</h2>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            
+            <div class="flex flex-col">
+                <h3 class="text-center font-bold text-lg mb-2 border-b-2 border-black pb-1 inline-block mx-auto px-4">Nina</h3>
+                <div class="relative">
+                    <img src="img/nina.png" class="w-full h-auto rounded-t-lg shadow-md" alt="Nina">
+                    <div class="absolute bottom-2 left-2 bg-white/80 p-1.5 rounded-full shadow-sm">
+                        <img src="icons/heart 1.png" alt="Amei" class="w-8 h-8">
+                    </div>
+                </div>
+                <div class="bg-[#D9A5A3]/20 border border-[#D9A5A3] p-6 rounded-b-lg shadow-lg text-sm leading-relaxed">
+                    <p class="mb-2"><strong class="text-black">✨ Personalidade:</strong></p>
+                    <ul class="list-disc list-inside mb-3 pl-2 text-gray-700 text-xs">
+                        <li>Muito dócil e carinhosa</li>
+                        <li>Adora atenção e faz festa quando vê gente nova</li>
+                        <li>Companheira e apegada</li>
+                    </ul>
+                    <p class="mb-1"><strong class="text-black">🐾 Nível de energia:</strong></p>
+                    <p class="text-xs text-gray-700 mb-3 pl-2">Moderado - gosta de passeios tranquilos</p>
+                    
+                    <p class="mb-1"><strong class="text-black">💛 Perfeito para:</strong></p>
+                    <p class="text-xs text-gray-700 pl-2">Famílias, pessoas que querem uma cachorrinha calma e afetuosa</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="text-center font-bold text-lg mb-2 border-b-2 border-black pb-1 inline-block mx-auto px-4">Gatão</h3>
+                <div class="relative">
+                    <img src="img/gatao.png" class="w-full h-auto rounded-t-lg shadow-md" alt="Gatão">
+                    <div class="absolute bottom-2 left-2 bg-white/80 p-1.5 rounded-full shadow-sm">
+                        <img src="icons/heart 2.png" alt="Amei" class="w-8 h-8">
+                    </div>
+                </div>
+                <div class="bg-[#D9A5A3]/20 border border-[#D9A5A3] p-6 rounded-b-lg shadow-lg text-sm leading-relaxed">
+                    <p class="mb-2"><strong class="text-black">✨ Personalidade:</strong></p>
+                    <ul class="list-disc list-inside mb-3 pl-2 text-gray-700 text-xs">
+                        <li>Observador e curioso</li>
+                        <li>Calmo, mas gosta de brincar quando está à vontade</li>
+                        <li>Se adapta bem a ambientes tranquilos</li>
+                    </ul>
+                    <p class="mb-1"><strong class="text-black">🐾 Nível de energia:</strong></p>
+                    <p class="text-xs text-gray-700 mb-3 pl-2">Médio - alterna momentos de descanso com brincadeiras</p>
+                    
+                    <p class="mb-1"><strong class="text-black">💛 Perfeito para:</strong></p>
+                    <p class="text-xs text-gray-700 pl-2">Quem busca um gato independente, porém carinhoso</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col">
+                <h3 class="text-center font-bold text-lg mb-2 border-b-2 border-black pb-1 inline-block mx-auto px-4">Toby</h3>
+                <div class="relative">
+                    <img src="img/toby.png" class="w-full h-auto rounded-t-lg shadow-md" alt="Toby">
+                    <div class="absolute bottom-2 left-2 bg-white/80 p-1.5 rounded-full shadow-sm">
+                        <img src="icons/heart 3.png" alt="Amei" class="w-8 h-8">
+                    </div>
+                </div>
+                <div class="bg-[#D9A5A3]/20 border border-[#D9A5A3] p-6 rounded-b-lg shadow-lg text-sm leading-relaxed">
+                    <p class="mb-2"><strong class="text-black">✨ Personalidade:</strong></p>
+                    <ul class="list-disc list-inside mb-3 pl-2 text-gray-700 text-xs">
+                        <li>Muito leal e protetor</li>
+                        <li>Tímido no início, mas super amoroso quando cria confiança</li>
+                        <li>Inteligente e atento ao ambiente</li>
+                    </ul>
+                    <p class="mb-1"><strong class="text-black">🐾 Nível de energia:</strong></p>
+                    <p class="text-xs text-gray-700 mb-3 pl-2">Baixo a moderado - ótimo para rotina tranquila</p>
+                    
+                    <p class="mb-1"><strong class="text-black">💛 Perfeito para:</strong></p>
+                    <p class="text-xs text-gray-700 pl-2">Pessoas pacientes que querem um grande amigo fiel</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-brand-pink py-12 relative z-10 shadow-md">
+        <div class="container mx-auto px-6">
+            <h2 class="text-2xl font-serif font-bold text-white mb-8 uppercase tracking-wider">Notícias</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                <div class="bg-white/10 p-0 rounded overflow-hidden">
+                    <img src="img/imagem_not1.png" class="w-full h-48 object-cover" alt="Noticia">
+                    <div class="p-4 text-white">
+                        <h4 class="font-bold text-sm mb-2">Pets: pesquisa aponta que 80% dos animais nos lares do Brasil são adotados</h4>
+                        <button class="bg-brand-brown text-xs py-2 px-4 rounded shadow hover:bg-red-900 transition">Ver matéria</button>
+                    </div>
+                </div>
+
+                <div class="bg-white/10 p-0 rounded overflow-hidden">
+                    <img src="img/imagem_not2.png" class="w-full h-48 object-cover" alt="Noticia">
+                    <div class="p-4 text-white">
+                        <h4 class="font-bold text-sm mb-2">Adoção de animais: entenda porque o ato de amor faz bem para todos</h4>
+                        <button class="bg-brand-brown text-xs py-2 px-4 rounded shadow hover:bg-red-900 transition">Ver matéria</button>
+                    </div>
+                </div>
+
+                <div class="text-white flex flex-col items-center text-center">
+                    <p class="font-bold text-xl font-serif leading-relaxed mb-4">
+                        Nesse exato momento, existem milhares de animaizinhos esperando um humano para chamar de seu. Mude o destino de um deles!
+                    </p>
+                    <img src="icons/pet-care.png" alt="Cuidar de pets" class="w-24 h-auto opacity-80 object-contain">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative z-0 bg-gray-200 h-[450px] w-full shadow-xl">
+        
+        <div class="w-full h-full flex flex-col items-center justify-center text-gray-500 select-none">
+            <img src="icons/location.png" class="w-12 h-12 mb-4 invert opacity-60" alt="Pin Mapa">
+            <h3 class="font-bold text-2xl uppercase tracking-widest opacity-60">Espaço Vazio</h3>
+            <p class="text-sm opacity-50 mt-2">Espaço disponível para APIs ou outros campos</p>
+        </div>
+
+    </section>
+
+    <footer class="bg-brand-brown text-white pt-12 pb-6">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8 mb-10">
+            
+            <div class="flex flex-col items-start">
+                <div class="flex items-center gap-2 text-2xl font-serif font-bold mb-4">
+                    <img src="icons/paw.png" alt="Logo Patinha" class="w-8 h-8 object-contain">
+                    <span>Adotaí</span>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-3 text-sm md:pl-10">
+                <a href="#" class="font-bold hover:text-brand-pink transition w-max">Início</a>
+                <a href="#" class="font-bold hover:text-brand-pink transition w-max">Animais para Adoção</a>
+                <a href="#" class="font-bold hover:text-brand-pink transition w-max">Como Doar</a>
+                <a href="#" class="font-bold hover:text-brand-pink transition w-max">Sobre Nós</a>
+            </div>
+
+            <div class="flex flex-col gap-6 font-mono text-sm">
+    
+                <div class="flex items-center gap-4">
+                    <img src="icons/instagram_branco.png" alt="Instagram" class="w-6 h-6 object-contain">
+                    <span class="text-base">adotai_pet</span>
+                </div>
+
+                <div class="flex items-center gap-4">
+                    <img src="icons/whatsapp_branco.png" alt="WhatsApp" class="w-6 h-6 object-contain">
+                    <span class="text-base">99684 - 5815</span>
+                </div>
+
+                <div class="flex items-start gap-4">
+                    <img src="icons/location.png" alt="Localização" class="w-8 h-8 mt-0 object-contain">
+                    <span class="text-base leading-snug">Av. BPS, 1303 - Pinheirinho,<br>Itajubá - MG, 37500-903</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6">
+            <div class="border-t border-white/20 pt-6 text-center text-sm font-mono">
+                &copy; 2025 Adotaí. Todos os direitos reservados.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Exemplo: Script simples para alertar nos botões
+        const buttons = document.querySelectorAll('button');
+        buttons.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Aqui você colocaria a lógica real
+                console.log('Botão clicado!');
+            });
+        });
+    </script>
+</body>
+</html>
