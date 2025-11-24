@@ -48,7 +48,7 @@
 
         <div class="flex items-center gap-4">
             <div class="relative hidden sm:block">
-                <input type="text" class="bg-transparent border border-white/50 rounded-full px-3 py-1 text-sm text-white placeholder-white/70 focus:outline-none" placeholder="Buscar...">
+                <input type="text" id="searchInput" class="bg-transparent border border-white/50 rounded-full px-3 py-1 text-sm text-white placeholder-white/70 focus:outline-none" placeholder="Buscar...">
                 <i class="fa-solid fa-magnifying-glass absolute right-3 top-2 text-xs"></i>
             </div>
             <img src="icons/user-interface.png" alt="Perfil" class="w-8 h-8 cursor-pointer opacity-90 hover:opacity-100">
@@ -126,7 +126,7 @@
      <div class="container mx-auto px-6">
         <h2 class="text-3xl font-serif font-bold mb-10 text-gray-900">Pronto para adotar?</h2>
         
-        <div class="grid md:grid-cols-3 gap-8">
+        <div id="petsContainer" class="grid md:grid-cols-3 gap-8">
             
             <div class="flex flex-col">
                 <h3 class="text-center font-bold text-lg mb-2 border-b-2 border-black pb-1 inline-block mx-auto px-4">Nina</h3>
@@ -298,15 +298,6 @@
         </div>
     </footer>
 
-    <script>
-        // Exemplo: Script simples para alertar nos botões
-        const buttons = document.querySelectorAll('button');
-        buttons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                // Aqui você colocaria a lógica real
-                console.log('Botão clicado!');
-            });
-        });
-    </script>
+    <script src="js/app.js"></script>
 </body>
 </html>
