@@ -246,13 +246,8 @@
     </section>
 
     <section class="relative z-0 bg-gray-200 h-[450px] w-full shadow-xl">
-        
-        <div class="w-full h-full flex flex-col items-center justify-center text-gray-500 select-none">
-            <img src="icons/location.png" class="w-12 h-12 mb-4 invert opacity-60" alt="Pin Mapa">
-            <h3 class="font-bold text-2xl uppercase tracking-widest opacity-60">Espaço Vazio</h3>
-            <p class="text-sm opacity-50 mt-2">Espaço disponível para APIs ou outros campos</p>
-        </div>
-
+        <div id="mapa-adotai" class="h-full w-full">
+            </div>
     </section>
 
     <footer id="contato" class="bg-brand-brown text-white pt-12 pb-6">
@@ -298,6 +293,12 @@
         </div>
     </footer>
 
-    <script src="js/app.js"></script>
+    <script src="js/app.js"></script> 
+    
+    <script defer 
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyADOssgF5P6OA7Fkp25TkptrrE4Ba86USA&callback=initMap">
+    </script>
+
+    <script src="./js/geolocation.js"></script> 
 </body>
 </html>
